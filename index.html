@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> temperature conversion project</title>
+        <style>
+            body {background-color: blue;
+                font-family: 'arial';
+            }
+            
+
+        </style>
+        
+        </head>
+        <body>
+            <p>
+                Hi, welcome to conversion guy! We can help you convert fahrenheit to celsius!
+            
+         
+         <p class="tempOne">your temp here!</p>
+         <h1>
+          enter your temperature in fahrenheit and we will convert it to Celsius
+         </h1>
+
+
+         <input type="number" id="temp1" name="fahrenheight" min="0" max="100" />
+      
+          <button onclick="calcTemp()">Click me to convert</button>
+          <div id="tempOne"></div>
+          
+        
+        
+           
+       
+          <script>
+            function calcTemp(){
+  
+  let amount = document.getElementById("temp1").value;
+
+  let conversionFactor=(5/9);
+
+  
+  let newTemp= (amount-32)*(conversionFactor)
+
+  let tempPlace = document.querySelector('.tempOne');
+                
+                tempPlace.innerHTML="your new temp is  "+newTemp
+  
+  
+
+}
+
+
+                
+
+        
+            
+        
+          </script>
+               
+</body>
+        
+    
+</html>
